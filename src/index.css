@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.screen {
+  font-size: 28px;
+  padding: 30px;
+}
+
+.form {
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 90%;
+  max-width: 420px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  background: gold;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .screen { font-size: 22px; }
+}
+
+.generate-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px; /* 👈 déplacé à droite */
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.success {
+  color: #00ff99;
+  font-weight: bold;
+  text-align: center;
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.share a,
+.share button {
+  padding: 10px;
+  border-radius: 10px;
+  background: gold;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
