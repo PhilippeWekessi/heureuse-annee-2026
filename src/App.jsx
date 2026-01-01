@@ -29,14 +29,16 @@ export default function App() {
     copy[index] = value;
     setCustom(copy);
   };
+  const baseUrl = window.location.origin + window.location.pathname;
 
   const link =
-    window.location.origin +
+    baseUrl +
     `?m1=${encodeURIComponent(custom[0])}` +
     `&m2=${encodeURIComponent(custom[1])}` +
     `&m3=${encodeURIComponent(custom[2])}` +
     `&m4=${encodeURIComponent(custom[3])}`;
 
+  
   const handleValidate = () => {
     if (custom.some((txt) => !txt.trim())) {
       alert("Veuillez remplir tous les champs");
